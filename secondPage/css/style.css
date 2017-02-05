@@ -1,66 +1,180 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-    font: normal normal 16px/18px 'Open Sans', sans-serif;
-}
-
-nav {
-    height: 50px;
-    display: flex;
-    border-bottom: solid 2px #ebebeb;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-.logo {
-    flex-grow: 414;
-}
-.friends {
-    flex-grow: 114;
-    background: #06d6cf;    
-    display: flex;
-}
-.equipment {
-    flex-grow: 150;
-    background: #252525;
-    display: flex;
-}
-.menu {
-    flex-grow: 3;
-    background: #252525;
-    border-left: solid 2px #363636; 
-}
+    
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        font: normal normal 16px/18px 'Open Sans', sans-serif;
+    }
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    nav {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 2px #ebebeb;
+    }
 
-.logo img {
-    padding: 10px 0 10px 20px;
-}
+    .right-part {
+        display: flex;
+    }
+    
+    .logo {
+        /*flex-grow: 414;*/
+    }
+    
+    .friends {
+        /* flex-grow: 114;*/
+        min-width: 190px;
+        background: #06d6cf;
+        display: flex;
+    }
+    
+    .equipment {
+        /*flex-grow: 150;*/
+        min-width: 250px;
+        background: #252525;
+        display: flex;
+    }
+    
+    .menu {
+        /*flex-grow: 3;*/
+        min-width: 50px;
+        background: #252525;
+        border-left: solid 2px #363636;
+        display: flex;
+    }
 
-nav p {
-    color: #ffffff;
-    align-self: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    margin: auto;
-}
-section {
-    display: flex;
-    height: 90%;
-}
+    ul {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        overflow: visible;
+    }
 
-.sec-1 {
-    flex-grow: 5.34;
-}
+   .menu:hover  ul {
+        display: block;
+    }
 
-.sec-2 {
-    flex-grow: 4.74;
-    border-left: solid 2px #ebebeb;
-}
+    .fa-bars {
+        color: #ffffff;
+        margin: auto;
+    }
+    
+    .logo img {
+        padding: 10px 0 10px 20px;
+    }
+    
+    nav p {
+        color: #ffffff;
+        align-self: center;
+        font-size: 14px;
+        margin: auto;
+    }
+    
+    section {
+        display: flex;
+        height: 90%;
+    }
+    
+    .sec-1 {
+        min-width: 52%;
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+    
+    .sec-2 {
+        min-width: 48%;
+        border-left: solid 2px #ebebeb;
+    }
+    
+    #mymap {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .wrapper {
+        margin: 10px;
+    }
+    
+    .top-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    .location p:first-child {
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 20px;
+    }
 
-#mymap {
-    width:100%; 
-    height:100%;
-}
+  .owner-location{
+      display: flex;
+  }
+
+  .owner-location img {
+      padding-bottom: 4px;
+      margin-right: 6px;
+  }
+    
+    .price {
+        background: #000000;
+        width: 180px;
+        height: 80px;
+        display: flex;
+    }
+    
+    .price p {
+        font-size: 24px;
+        color: #ffffff;
+        
+
+    }
+    .price-align {
+        align-self: center;
+        margin: auto;
+        display: flex;
+    }
+    .price-align p:first-child {
+        margin-right: 5px;
+        font-size: 48px;
+        align-self: center;
+    }
+    .currency {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .currency p:first-child {
+        margin-bottom: 5px;
+        font-size: 18px;        
+    }
+
+    .currency p:last-child {
+        margin-top: 4px;
+        border-top: solid 2px #ffffff;
+        font-size: 18px;
+    }
+    
+    .slider {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .slider img {
+        min-height: 260px;
+    }

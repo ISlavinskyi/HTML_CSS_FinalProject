@@ -4,30 +4,84 @@
 <head>
     <title>ATAKE</title>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
     <link href="./css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=cyrillic" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1.0">
-    <script src = "https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 </head>
 
 <body>
     <nav>
-        <div class="logo">
-            <img src="./images/logo.png" alt="logo">
-        </div>
-        <div class="friends"><p>Пригласи друзей</p></div>
-        <div class="equipment"><p>Сдай своё снаряжение</p></div>
-        <div class="menu">4</div>
-    </nav>
-    <section>
-        <div class="sec-1"></div>
-        <div class="sec-2">
-            <div id="mymap">
-
+        <div class="left-part">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
             </div>
         </div>
+        <div class="right-part">
+            <div class="friends">
+                <p>Пригласи друзей</p>
+            </div>
+            <div class="equipment">
+                <p>Сдай своё снаряжение</p>
+            </div>
+            <div class="menu">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                <ul>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="sec-1">
+            <div class="wrapper">
+                <div class="top-price">
+                    <div class="location">
+                        <p>Toyota Corolla Sprinter Trueno (AE86)</p>
+                        <div class="owner-location">
+                            <img src="./images/location.png" alt="location">
+                            <p>Харьков, Харьковская область, Фрунзенский</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <div class="price-align">
+                            <p>76</p>
+                            <div class="currency">
+                                <p>грн</p>
+                                <p>час</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="image-1">
+                        <img src="./images/car_22.png" alt="car">
+                    </div>
+                    <div class="image-2">
+                        <img src="./images/car_11.png" alt="car">
+                    </div>
+                    <div class="image-3">
+                        <img src="./images/car_00.png" alt="car">
+                    </div>
+                </div>
+            </div>
+            <div class="advanced">
+                <div class="charakteristik"></div>
+                <div class="owner"></div>
+            </div>
+
+        </div>
+        <div class="sec-2">
+            <div id="mymap"></div>
+        </div>
+
     </section>
 </body>
 <script src="./scripts/map.js" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 </html>
