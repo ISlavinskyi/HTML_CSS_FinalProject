@@ -52,7 +52,7 @@
         display: flex;
     }
 
-    ul {
+    .menu ul {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
@@ -177,4 +177,124 @@
     
     .slider img {
         min-height: 260px;
+    }
+
+    .advanced {
+        display: flex;
+    }
+
+    .characteristics {
+        display: flex;
+        flex-direction: column;
+        min-width: 67%;
+    }
+
+    .characteristics > p{
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #929292;
+    }
+
+    .specifications {
+        display: flex;
+        border-top: solid 2px #f9f9f9;
+    }
+
+    .specifications p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .specifications span{
+        color: #06d6cf;
+    }
+
+    .spec-col-1{
+        margin-right: 70px;
+    }
+
+    .owner {
+        min-width: 33%;
+    }
+
+    .description {
+        border-top: solid 2px #f9f9f9;
+    }
+
+    .description p {
+        margin-top: 15px;
+    }
+
+    .set {
+        border-top: solid 2px #f9f9f9;
+        display: flex;
+        margin-left: -30px;
+    }
+
+    .circle {
+        margin-top: 15px;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #000000;
+        border-radius: 50%;        
+    }
+
+    .helment {
+        background: url(".././images/helment_white.png") no-repeat 50% 50%;
+    }
+    .tool {
+        background: url(".././images/tool_white.png") no-repeat 50% 50%;
+    }
+    .flashlight {
+        background: url(".././images/flashlight.png") no-repeat 50% 50%;
+    }
+    .lock {
+        background: url(".././images/lock_white.png") no-repeat 50% 50%;
+    }
+
+    .set div {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .set div p {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .conditions {
+        display: flex;
+        margin-top: 25px;        
+    }
+
+    .main-conditions {
+        min-width: 50%; 
+       
+    }
+
+    .special-conditions {
+        min-width: 48%;
+        margin-left: 15px;
+    }
+
+    .first-col {
+        border-top: solid 2px #f9f9f9;
+        margin-top: 15px;
+        display: flex;
+    }
+
+    .conditions  p {
+        font-size: 16px;
+        color: #929292;
+    }
+
+    .conditions li {
+        margin: 5px 20px;
+        list-style-type: square;
+    }
+
+    .second-col {
+        border-top: solid 2px #f9f9f9;
+        margin-top: 15px;
     }
