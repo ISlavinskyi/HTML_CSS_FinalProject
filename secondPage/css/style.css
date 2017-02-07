@@ -7,8 +7,9 @@
     html,
     body {
         width: 100%;
-        height: 100%;
+        min-height: 100%;
         font: normal normal 16px/18px 'Open Sans', sans-serif;
+        position:relative;
     }
     
     p {
@@ -24,49 +25,33 @@
 
     .right-part {
         display: flex;
-    }
+    }    
     
-    .logo {
-        /*flex-grow: 414;*/
-    }
-    
-    .friends {
-        /* flex-grow: 114;*/
+    .friends {       
         min-width: 190px;
         background: #06d6cf;
         display: flex;
     }
     
-    .equipment {
-        /*flex-grow: 150;*/
+    .equipment {        
         min-width: 250px;
         background: #252525;
         display: flex;
     }
     
-    .menu {
-        /*flex-grow: 3;*/
+    .menu {        
         min-width: 50px;
         background: #252525;
         border-left: solid 2px #363636;
         display: flex;
     }
-
-    .menu ul {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 12px 16px;
-        overflow: visible;
-    }
+    
 
    .menu:hover  ul {
         display: block;
     }
 
-    .fa-bars {
+    .fa {
         color: #ffffff;
         margin: auto;
     }
@@ -84,14 +69,14 @@
     
     section {
         display: flex;
-        height: 90%;
+        height: 100%;
     }
     
     .sec-1 {
         min-width: 52%;
         color: #000000;
         font-family: 'Roboto', sans-serif;
-        font-size: 14px;
+        font-size: 14px;        
     }
     
     .sec-2 {
@@ -121,12 +106,12 @@
     }
 
   .owner-location{
-      display: flex;
+        display: flex;
   }
 
   .owner-location img {
-      padding-bottom: 4px;
-      margin-right: 6px;
+        padding-bottom: 4px;
+        margin-right: 6px;
   }
     
     .price {
@@ -179,6 +164,40 @@
         min-height: 260px;
     }
 
+    .image-1, .image-3 {
+        position: relative;        
+    }
+
+    .control {
+         position: absolute;         
+         bottom: 0px;
+         margin-bottom: 1.2%;         
+         width: 20%;
+         height: 98.9%;
+         transition: 0.4s ease all;
+         background: #000000;
+         opacity: 0.2;
+         text-align: center;
+         display: flex;
+         
+    }
+
+    .image-1 .left {
+        left: 0px;
+    }
+
+    .image-3 .right {
+        right: 0px;
+    }
+
+    .slider i {
+        align-self: center;
+    }
+
+    .control:hover {
+        opacity: 0.5;
+    }
+
     .advanced {
         display: flex;
     }
@@ -187,6 +206,7 @@
         display: flex;
         flex-direction: column;
         min-width: 67%;
+        margin-bottom: 75px;
     }
 
     .characteristics > p{
@@ -212,11 +232,7 @@
 
     .spec-col-1{
         margin-right: 70px;
-    }
-
-    .owner {
-        min-width: 33%;
-    }
+    }   
 
     .description {
         border-top: solid 2px #f9f9f9;
@@ -297,4 +313,111 @@
     .second-col {
         border-top: solid 2px #f9f9f9;
         margin-top: 15px;
+    }
+
+    .owner {
+        min-width: 33%;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .owner > p {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #929292;
+        text-align: center;
+    }
+    .photo {
+        width: 175px;
+        height: 175px;        
+        border-radius: 50%;
+        align-self: center;
+        background: url(".././images/owner_avatar.png") no-repeat 50% 50%;
+    }
+
+    .owner-info {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .owner-info p:first-child {
+        font-size: 16px;        
+    }
+
+    .owner-info p:last-child {
+        font-size: 14px;
+        color: #929292;
+        text-align: center;        
+    }
+
+    .verification {
+        margin-top: 20px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .social {
+        display: flex;
+    }
+
+    .social .soc {
+        margin: 5px;
+        width: 20px;
+        height: 20px;
+        background-color: #252525;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rating {
+        margin-top:15px;
+    }
+
+    .rating p:last-child {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 75px;
+        background-color: #252525;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foot-left {
+        display: flex;
+        margin: auto 0;
+        justify-content: center;
+        color: #ffffff;
+    }
+
+    .foot-left p{
+        margin-left: 15px;
+    }
+
+    .foot-right {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footer-soc {
+        text-align: right;
+    }
+
+    .footer-soc .fa, .rights {
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+
+
+    .rights p{
+        font-size: 12px;
+        color: #929292;
     }
