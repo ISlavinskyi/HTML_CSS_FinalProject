@@ -9,7 +9,7 @@
         width: 100%;
         min-height: 100%;
         font: normal normal 16px/18px 'Open Sans', sans-serif;
-        position:relative;
+        position: relative;
     }
 
     a {
@@ -48,7 +48,24 @@
         min-width: 50px;
         background: #252525;
         border-left: solid 2px #363636;
+        position: relative;
         display: flex;
+    }
+
+    .message {
+        width: 20px;
+        height: 20px;
+        background: #06d6cf;
+        right: 15%;
+        bottom: 46%;
+        border: solid 2px #252525;
+        position: absolute;
+    }
+
+    .message span {
+        font-size: 12px;
+        color: #f9f9f9;
+        margin-left: 3px;        
     }
     
 
